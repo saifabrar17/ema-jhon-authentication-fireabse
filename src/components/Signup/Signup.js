@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Signup.css';
 import auth from '../../firebase.init'
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+// import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 const Signup = () => {
     
@@ -16,7 +16,7 @@ const Signup = () => {
     const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
 
     const navigate = useNavigate();
-    
+
     const handleEmailBlur = event =>{
         setEmail(event.target.value);
     }
